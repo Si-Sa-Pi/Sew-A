@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!--Feather Icons-->
+    <link href="assets/css/feather.css" rel="stylesheet" type="text/css">
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+
+    <!--JS Bootstrap-->
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=iKaxDWdWa1fIVFVv4MzZsdA0RhNEvapIPJFo_aYUfq_J5Q6so7yVhiCTz36uxZ7vH71zoWCqFciRfHyZDYVOVhkuGpRFCzxNQOK9Ylc1spis2X4zYzKlLbUg9dQiknHFUMa1zy7nxM76Yq9jBaglfg" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+       body{
+      background-color: #2f2f2b;
+      }
+</style>
+  </head>
+<body>
+
+<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40%;">
+    <center>
+    <div class="container" style="padding: 20px; color: #f3712f; background-color: #000000; width: 60%; height: 70%; border-radius: 15px; border: 2px solid #f3712f;">
+        <form>
+                        <h2> Sign Up</h2>
+                        <br />
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label class="mail" >Email  </label></div>
+                                <div class="col-xs-8"	>	 
+                                     <input type="email" name="email"  id="email"placeholder="Enter your email" class="form-control" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label class="fname" >Full Name  </label></div>
+                                <div class="col-xs-8"	>	 
+                                     <input type="fullname name="fullname"  id="fullname"placeholder="Enter your fullname" class="form-control" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label class="pnumber" >Phone Number  </label></div>
+                                <div class="col-xs-8"	>	 
+                                     <input type="phonenumber" name="phonenumber"  id="phonenumber"placeholder="Enter your phone number" class="form-control" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label class="uname" >Username  </label></div>
+                                <div class="col-xs-8"	>	 
+                                     <input type="username" name="username"  id="username"placeholder="Enter your username" class="form-control" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                      <label class="pass">Password </label></div>
+                             <div class="col-xs-8">
+                                    <input type="password" name="password" id="password" placeholder="Enter your Password" class="form-control">
+                            </div>
+                     </div>
+                     </div>
+                            <span style ="font-size:15px;"> Date of Birth</span>
+                            <div class="row">
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Month">Month</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Day">Day</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Year">Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label class="radio-inline">
+                                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                                Male
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                                Female
+                            </label>
+                            <input type="address" id="inputAddress" class="form-control" placeholder="Your Address" required autofocus>
+                            <input type="idnumber" id="inputIdNumber" class="form-control" placeholder="Your ID Number" required>
+                            <div class="field" align="left">
+                                <h5>Upload your ID Picture</h5>
+                                <input type="file" id="files" name="files[]" multiple />
+                              </div>
+                            <br />
+                            <div id="remember" class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="terms&conditions" style="color: #f3712f;"> Agree on Terms & Conditions
+                                </label>
+                            </div>
+                            <button style="text-align: center; color: #f3712f; width: 298px; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Sign Up</button>
+                            <button style="text-align: center; color: #f3712f; width: 298px; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Login</button>
+                            </form>                      
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<div >
+  <footer class="fixed-bottom" style='text-align: center; padding: 3px; background-color: #2f2f2b; border-color: #f3712f; color: #f3712f;'>
+    <p>Want to know about us ?<br></p>
+    <h6 href="ASW">About</h6>
+  </footer>
+</div>
+</body>
+</html>
