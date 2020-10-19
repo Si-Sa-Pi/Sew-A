@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>add/update my car</title>
     <link rel="icon" href="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/Logo/Sew-A-Car unfilled.png">
-    
     <!--CSS Bootstrap-->
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -18,13 +17,14 @@
     <style>
        body{
       background-color:black;
+
       }
 </style>
   </head>
 <body>
   
   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #2f2f2b; border-color: #f3712f;">
-    <a class="navbar-brand" href="#"><img style="width: 100px; height:40px;" src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/Logo/Sew-A-Car unfilled.png" alt="Logo Sew-A-Car"></a>
+    <a class="navbar-brand" href="#"><img style="width: 100px; height:40px;" src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/logo.png" alt="Logo Sew-A-Car"></a>
     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"style="border-color: #f3712f " >
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,13 +32,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav nav-tabs mr-auto">
         <li class="nav-item ">
-          <a class="nav-link active" style="color: #f3712f; background-color: black; border-color: #f3712f;" href="#">Catalogue</a>
+          <a class="nav-link active" style="color: #f3712f; background-color:#2f2f2b; border-color: #f3712f;" href="https://si-sa-pi.github.io/Sew-A-Car/Catalogue.html">Catalogue</a>
         </li>
         <li class="nav-item oren">
-          <a class="nav-link " style="color: #f3712f; background-color: #2f2f2b; border-color: #f3712f;" href="#">My Rents</a>
+          <a class="nav-link " style="color: #f3712f; background-color: #2f2f2b; border-color: #f3712f;" href="https://si-sa-pi.github.io/Sew-A-Car/my%20rent.html">My Rents</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: #f3712f; background-color: #2f2f2b; border-color: #f3712f;" href="#">My Cars</a>
+          <a class="nav-link" style="color: #f3712f; background-color:black ; border-color: #f3712f;" href="https://si-sa-pi.github.io/Sew-A-Car/my%20cars.html">My Cars</a>
         </li> 
       </ul>
       <ul class="nav nav-tabs navbar-right mr-2">
@@ -47,107 +47,117 @@
           Si-Sa-Pi
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Profile</a>
-          <a class="dropdown-item" href="#">Log Out</a>
-          <li><a href="#"><img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/Logo/Si-Sa-Pi%20circle.png" alt="Si Sapi"class="rounded-circle"style="width 220px; height:40px;border-color: #f3712f"></li></a>
+          <a class="dropdown-item" href="https://si-sa-pi.github.io/Sew-A-Car/Profile.html">Profile</a>
+          <a class="dropdown-item" href="https://si-sa-pi.github.io/Sew-A-Car/Login.html">Log Out</a>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/Si-Sa-Pi_circle.png" alt="Si Sapi"class="rounded-circle"style="width 220px; height:40px;border-color: #f3712f"></li></a>
         </ul>
         </div>
       </li>
+      
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
     </div>
   </nav>
 
-  <center><main role="main" class="inner cover mx-1 py-5 px-2" style="color: #f3712f;background-color: #000000; border-radius: 15px; border: 2px solid #f3712f;">
-        <div class="row">
-        <div class="col">
-            <h4 style="text-align: center; font-size: 30px; line-height: 35px;" >Selected Car</h4>
-            <h4 style="text-align: center; font-size: 13px; line-height: 5px;" ><br>Please check again the information of the car<br><br></h4>
-            <br>
-            <!--Halaman Kiri-->
-            <div class="row">
-                <!--Halaman Kiri 1-->
-                <div class="col" style="margin: auto;">
-                    <center><img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/bmw-3-series 1.svg" class="rounded" alt="..." style="width: 350px; height:350"></center>
-                </div>
-                <!--Halaman Kiri 2-->
-                <div class="col-4">
-                <h4 style="text-align: center;" >
-                    BMW 330i'19<br>
-                </h4>
-                <h5 style="text-align: center;" >
-                    Si-Sa-Pi<br><br>
-              
-                    Matic<br><br>
-              
-                    7 Seat<br><br>
-              
-                    Genap<br><br>
-              
-                    Jakarta
-                </h5>
-                </div>
-                <div style="width: 0px; height: 310px; border-left: 1px #f3712f solid;">
+	<div class="container">
+  		<div class="card text-center mt-5" style="max-width: 3000x;background-color: #2f2f2f; border-color: #f3712f;">
+			<div class="container filter mt-3">
+                <div class="row">
+                    <div class="col-md-6 my-5 img-left" style="color: #f3712f;">
+                        <div class="container py-5">
+                            <img src="https://res.cloudinary.com/mhmd/image/upload/v1564991372/image_pxlho1.svg" alt="" width="150" class="mb-4">
+                        <div class="row py-4">
+                            <div class="col-lg-6 mx-auto">
+                                <div class="input-group mb-3 px-2 py-2">
+                                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                                </div>                    
+                                <!-- Uploaded image area-->
+                                <p class="font-italic text-center" style="color: #f3712f;">The image uploaded will be rendered inside the box below.</p>
+                                <div class="image-area"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6 filter-right"style="color: #f3712f;border-color: #f3712f;">
+                        <div class="filter" id="myTabContent">
+                            <div class="filter show active" id="home" role="tabpanel" aria-labelledby="home-tab"style="color: #f3712f;border-color: #f3712f;">
+                                <h3 class="filter-heading mt-5 mb-4">Add or Update Your Car</h3>
+                                <div class="row filter-form">
+                                    <div class="col-md-6">
+                    <div class="form-group">
+										<form class="form-input mb-3">
+                                            <input type="carname" id="inputCarName" class="form-control" style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;"placeholder="Car Name" >
+                                          </form>
+                                        </div>
+                    <div class="form-group">
+                                            <select class="form-control"style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                                                <option class="hidden"  selected disabled>Car Type</option>
+                                                <option>SUV</option>
+                                                <option>Hatchback</option>
+                                                <option>MPV</option>
+                                                <option>Sedan</option>
+                                            </select>
+                                        </div>
+                    <div class="form-group">
+                                            <select class="form-control"style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                                                <option class="hidden"  selected disabled>Car Seat</option>
+                                                <option>4 Seat</option>
+                                                <option>5 Seat</option>
+                                                <option>6 Seat</option>
+                                                <option>7 Seat</option>
+                                            </select>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6">
+                    <div class="form-group">
+                                            <select class="form-control"style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                                                <option class="hidden"  selected disabled>Transmission</option>
+                                                <option>Matic</option>
+                                                <option>Manual</option>
+                                            </select>
+                                        </div>                  
+                    <div class="form-group">
+                                            <select class="form-control"style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                                                <option class="hidden"  selected disabled>Location</option>
+                                                <option>Jakarta</option>
+                                                <option>Bandung</option>
+						                        <option>Bogor</option>
+											    <option>Bekasi</option>
+                                            </select>
+                                        </div>   
+                    <div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline mr-3"> 
+                                                    <input type="radio" name="No Polisi" value="Ganjil" checked>
+                                                    <span>Ganjil </span> 
+                                                    </label>
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="No Polisi" value="Genap">
+                                                    <span>Genap </span> 
+                                                    </label>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                                <input type="submit" class="btnadd mt-3"  value="&#32 Add &#32" style="color: #f3712f;border-color: #f3712f;background-color: #2f2f2f;border-radius: 5px;font-size: 17px;  line-height: 20px; height: 40px;">
+                                <input type="submit" class="btnupdate mt-3"  value="Update" style="color: #f3712f;border-color: #f3712f;background-color: #2f2f2f;border-radius: 5px;font-size: 17px;  line-height: 20px; height: 40px;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <h4 style="text-align: center; font-size: 30px; line-height: 35px;" >Confirmation Form</h4>
-            <h4 style="text-align: center; font-size: 13px; line-height: 5px;" ><br>Please fill in all the fields below to rent a car<br><br></h4>
-            <br>
-            <!--Halaman Kanan-->
-            <div class="row">
-              <div class="row" style="margin: auto;">
-                <div class="col">
-                  <h4 for="foto1">Driving License :</h4>
-                </div>
-                <div class="col">
-                  <h4 for="foto2">Driver Holding Driving License :</h4>
-                </div>
-              </div>
-              <br><br>
-              <div class="row" style="margin: auto;">
-                <div class="col">
-                  <input type="file" class="form-control-file" id="foto1">
-                </div>
-                <div class="col">
-                  <input type="file" class="form-control-file" id="foto2">
-                </div>
-              </div>
-            </div>
-            <br><br>
-            <div style="text-align: center;">
-              <form style="line-height: 18px;">
-                  <h5>Start Rent : </h5>
-                  <input type="date"/><br>
-              </form>
-        
-              <h5 style="text-align: center; word-wrap: break-word; font-size: 17px;" >
-                  until
-              </h5>
-              <form>
-                  <h5>End Rent : </h5>
-                  <input type="date"/><br>
-              </form>
-            </div>
-        </div>
-    </div>
-    <br>
-    <center class="my-3">
-      <div class="my-2">
-        <button style="width: 25%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Sew-A-Car</button>
-      </div>
-      <div class="my-1">
-        <button onclick="history.back()" style="width: 25%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Back</button>
-      </div>
-    </center>
-  </main></center>
-  
- <footer class="mastfoot mt-auto" style='text-align: center; padding: 3px; background-color: #2f2f2b; border-color: #f3712f; color: #f3712f;'>
-  <div class="inner">
-    <p>
-      Want to know more about us?<br>
-      <a href="https://si-sa-pi.github.io/Sew-A-Car/About.html" style="color: #f3712f;"><b>About</b></a>
-    </p>
-  </div> 
-</footer>
+	</div>
+	
+    <footer class="fixed-bottom mastfoot mt-auto" style='text-align: center; padding: 3px; background-color: #2f2f2b; border-color: #f3712f; color: #f3712f;'>
+      <div class="inner">
+        <p>
+          Want to know more about us?<br>
+          <a href="https://si-sa-pi.github.io/Sew-A-Car/About.html" style="color: #f3712f;"><b>About</b></a>
+        </p>
+      </div> 
+    </footer>
 </body>
 </html>
