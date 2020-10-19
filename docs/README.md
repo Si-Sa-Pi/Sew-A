@@ -18,7 +18,7 @@ Detail Catalogue    :https://si-sa-pi.github.io/Sew-A-Car/detail%20catalogue.htm
 Registration Nyewa  :https://si-sa-pi.github.io/Sew-A-Car/Registration%20Nyewa.html
 Pembayaran          :https://si-sa-pi.github.io/Sew-A-Car/Pembayaran.html
 My Rent             :https://si-sa-pi.github.io/Sew-A-Car/my%20rent.html
-Detail My Rent      :https://si-sa-pi.github.io/Sew-A-Car/detail%20%my%20rent.html
+Detail My Rent      :https://si-sa-pi.github.io/Sew-A-Car/detail%20my%20rent.html
 My Cars             :https://si-sa-pi.github.io/Sew-A-Car/my%20cars.html
 Detail My Cars      :https://si-sa-pi.github.io/Sew-A-Car/detail%20my%20cars.html
 Add/Update My Cars  :https://si-sa-pi.github.io/Sew-A-Car/add%20update%20my%20cars.html
