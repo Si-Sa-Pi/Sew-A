@@ -4,6 +4,6 @@
       format: 'yyyy-mm-dd',
       autoclose: true,
       todayHighlight: true,
-  });
- });
+  })});
+ 
 </script>
