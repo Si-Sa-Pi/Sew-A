@@ -1,7 +1,6 @@
 There's 3 folders in this repo:
-1. "Logo" filled with logos used in html
-2. "docs" filled with html files 
-3. "foto mobil" filled with image sources used in html
+1. "docs" filled with html files 
+3. "images" filled with image sources used in html
 
 The Flow:
 
