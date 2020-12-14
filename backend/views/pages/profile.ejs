@@ -1,0 +1,96 @@
+  <!--Main-->
+  <center><main role="main" class="inner cover mx-1" style="color: #f3712f; background-color: #000000; border-radius: 15px; border: 2px solid #f3712f;">
+    <h1 class="cover-heading my-4" style="font-size: 30px; line-height: 35px;">Profile</h1>
+    <div class="row">
+      <!--kiri-->
+      <div class="col my-2">
+        
+        <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/Logo/Si-Sa-Pi%20circle.png" style="border-radius: 188px; border: 2px solid #f3712f; width: 350px; height: 350px; ">
+        
+        <br><br>
+        
+      </div>
+      <!--kanan-->
+      <div class="col my-2" style="align-items: center;">
+        <form style="align-items: center;">
+        <div class="row">
+          <div class="col-5" style="text-align: center; vertical-align: middle">
+            <p class="my-2">Fullname</p>
+          </div>
+          <div class="col-6 my-1 mx-4" style="vertical-align: middle; align-items: center; text-align: center; color: #f3712f; height: 40px; background: #ffffff; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">
+            <p class="my-2"><%= fullname %></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5" style="text-align: center;">
+            <p class="my-2">Username</p>
+          </div>
+          <div class="col-6 my-1 mx-4" style="vertical-align: middle; align-items: center; text-align: center; color: #f3712f; height: 40px; background: #ffffff; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">
+            <p class="my-2"><%= username %></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5" style="text-align: center;">
+            <p class="my-2">Email</p>
+          </div>
+          <div class="col-6 my-1 mx-4" style="text-align: center; color: #f3712f; height: 40px; background: #ffffff; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">
+            <p class="my-2"><%= email %></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5" style="text-align: center;">
+            <p class="my-2">Phone Number</p>
+          </div>
+          <div class="col-6 my-1 mx-4" style="text-align: center; color: #f3712f; height: 40px; background: #ffffff; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">
+            <p class="my-2"><%= phone %></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5" style="text-align: center;">
+            <p class="my-2">Id Number</p>
+          </div>
+          <div class="col-6 my-1 mx-4" style="text-align: center; color: #f3712f; height: 40px; background: #ffffff; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">
+            <p class="my-2"><%= id_number %></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5" style="text-align: center;">
+            <p class="my-2">Date of Birth</p>
+          </div>
+          <div class="col-6 my-1 mx-4" style="text-align: center; color: #f3712f; height: 40px; background: #ffffff; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">
+            <p class="my-2"><%= dob %> <sub>20</sub>00</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5" style="text-align: center;">
+            <p class="my-2">Address</p>
+          </div>
+          <div class="col-6 my-1 mx-4" style="text-align: center; color: #f3712f; height: 40px; background: #ffffff; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">
+            <p class="my-2"><%= address %></p>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    <center class="my-3" style="width: 50%;">
+      <div class="my-2">
+        <a class="btn" style="width: 50%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;" href="profile/edit">Edit Profile</a>
+      </div>
+      <div class="my-1">
+        <button onclick="history.back()" style="width: 50%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Back</button>
+      </div>
+    </center>
+  </main></center>
+
+  <!--Footer-->
+  <footer class="mastfoot mt-auto" style='text-align: center; padding: 3px; background-color: #2f2f2b; border-color: #f3712f; color: #f3712f;'>
+    <div class="inner">
+      <p>
+        Want to know more about us?<br>
+        <a href="https://si-sa-pi.github.io/Sew-A-Car/About.html" style="color: #f3712f;"><b>About</b></a>
+      </p>
+    </div> 
+</footer>
+
+<%- contentFor('title') %>
+Profile
