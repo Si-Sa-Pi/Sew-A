@@ -1,0 +1,120 @@
+  <!-- Search form -->
+  <div class="container">
+    <div class="input-group md-form form-sm form-2 pl-0">
+      <input class="form-control mt-4 my-0 py-1" type="text" placeholder="Search" aria-label="Search"style="border-color: #f3712f">
+      <div class="input-group-append mt-4">
+        <button class="btn btn-secondary" style="width: 50px; height:38px;">
+          <input type="image" src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/search (1).svg">
+        </button>
+        </div>
+    </div>
+  </div>
+
+	<div class="container">
+    <div class="card text-center my-4" style="max-width: 3000x;background-color: #2f2f2f; border-color: #f3712f;">
+      <div class="container filter my-2">
+        <div class="row">
+          <div class="col-5 my-5 mx-4" style="color: #f3712f;">
+            <div class="container py-3">
+              <img src="https://res.cloudinary.com/mhmd/image/upload/v1564991372/image_pxlho1.svg" alt="" width="150" class="mb-4">
+              <div class="row py-4">
+                <div class="col-lg-6 mx-auto">
+                  <div class="input-group mb-3 px-2 py-2">
+                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                  </div>                    
+                  <!-- Uploaded image area-->
+                  <p class="font-italic text-center" style="color: #f3712f;">The image uploaded will be rendered inside the box below.</p>
+                  <div class="image-area"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 my-5 mr-2"style="color: #f3712f;border-color: #f3712f;">
+            <div class="filter" id="myTabContent">
+              <div class="filter show active" id="home" role="tabpanel" aria-labelledby="home-tab"style="color: #f3712f;border-color: #f3712f;">
+                <h3 class="filter-heading mt-5 mb-4">Add Your Car</h3>
+                <div class="row filter-form">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <form class="form-input mb-3">
+                        <input name="car_name" type="carname" id="inputCarName" class="form-control" style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;"placeholder="Car Name" >
+                      </form>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control"style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                        <option class="hidden"  selected disabled>Car Type</option>
+                        <option>SUV</option>
+                        <option>Hatchback</option>
+                        <option>MPV</option>
+                        <option>Sedan</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select name="seat" class="form-control"style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                        <option class="hidden"  selected disabled>Car Seat</option>
+                        <option>4 Seat</option>
+                        <option>5 Seat</option>
+                        <option>6 Seat</option>
+                        <option>7 Seat</option>
+                      </select>
+                    </div>                    
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select name="transmission" class="form-control"style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                        <option class="hidden"  selected disabled>Transmission</option>
+                        <option>Matic</option>
+                        <option>Manual</option>
+                      </select>
+                    </div>                  
+                    <div class="form-group">
+                      <select name="car_location" class="form-control"style="color: #f3712f; background-color:#2f2f2b ; border-color: #f3712f;">
+                        <option class="hidden"  selected disabled>Location</option>
+                        <option>Jakarta</option>
+                        <option>Bandung</option>
+                        <option>Bogor</option>
+                        <option>Bekasi</option>
+                      </select>
+                    </div>   
+                    <div class="form-group">
+                      <div class="maxl">
+                        <label class="radio inline mr-3"> 
+                          <input type="radio" name="No Polisi" value="Ganjil" checked>
+                          <span>Ganjil </span> 
+                        </label>
+                        <label class="radio inline"> 
+                          <input type="radio" name="No Polisi" value="Genap">
+                          <span>Genap </span> 
+                        </label>
+                      </div>
+                    </div>                                 
+                  </div>
+                </div>
+                <div class="my-1">
+                  <button style="width: 60%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Add</button>
+                </div>                                
+                <div class="my-1">
+                  <button onclick="history.back()" style="width: 60%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+  <footer class="mastfoot mt-auto" style='text-align: center; padding: 3px; background-color: #2f2f2b; border-color: #f3712f; color: #f3712f;'>
+    <div class="inner">
+      <p>
+        Want to know more about us?<br>
+        <a href="https://si-sa-pi.github.io/Sew-A-Car/About.html" style="color: #f3712f;"><b>About</b></a>
+      </p>
+    </div> 
+  </footer>
+
+  <%- contentFor('title') %>
+  Add My Cars
+  
+  <%- contentFor('username') %>
+  lalala

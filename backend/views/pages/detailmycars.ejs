@@ -1,0 +1,124 @@
+<!-- Search form -->
+  <div class="container">
+    <div class="input-group md-form form-sm form-2 pl-0">
+      <input class="form-control mt-4 my-0 py-1" type="text" placeholder="Search" aria-label="Search"style="border-color: #f3712f">
+      <div class="input-group-append mt-4">
+        <button class="btn btn-secondary" style="width: 50px; height:38px;">
+          <input type="image" src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/search (1).svg">
+        </button>
+        </div>
+    </div>
+  </div>
+  <!-- detail -->
+    <div class="container mt-5" >
+        <div class="card" style="background: transparent;">
+            <div class="container-fliud">
+                <div class="wrapper row">
+                    <div class="preview col-md-5 text-center mt-5" ></br></br>
+                            <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/bmw-3-series 1.svg" class="rounded" alt="..." style="width: 350px; height:350px">
+                        
+                    </div>
+                    <div class="details col-md-6 ">
+                        <center>
+                        <div class="row ml-1" style="text-align: center;">
+                            <center><h1 style="font-size: 50px;"><%= car.car_name %></h1></center>
+                        </div>
+                        <div class="row">
+                          <div class="col ml-2">
+                            <hr size="10px" style="border-color: #f3712f">
+                            <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/Logo/Si-Sa-Pi%20circle.png" style="width: 40px;height: 40px;"class="float-left mr-5">
+                          <div class="float-left mt-1"style="color: #f3712f;"><h4><%=result[0].fullname%></h4>  
+                          </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col ml-2 mt-2">
+                              <hr size="10px" style="border-color: #f3712f">
+                                <div class="col">
+                                    <div class="float-left mr-5 ml-4"style="color: #f3712f">
+                                        <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/gear box.png" style="width: 24px;height: 24px;"><h5><%= result[0].transmission %></h5>
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="float-left mr-5"style="color: #f3712f">
+                                        <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/seat .png" style="width: 24px;height: 24px;"><h5><%= result[0].seat %> Seats</h5>
+                                      </div>
+                                </div>
+                            <div class="col">
+                                <div class="col">
+                                    <div class="location-text float-left" style="color: #f3712f">
+                                        <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/map-pin (1).svg" ><h5><%= result[0].car_location %></h5></div>
+                                </div>
+                                <div class="col">
+                                    <div class="gage-text float-left ml-5" style="color: #f3712f">
+                                        <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/gage.png"style="width: 25px;height: 27px;" ><h5><%= result[0].even_odd %></h5></div>
+                                </div>
+                            </div>
+                        </div>
+                        </center>
+                        <div class="row">
+                          <div class="col ml-2">
+                            <hr size="10px" style="border-color: #f3712f">
+                            <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/7fe06482555a274733942aafa513975bd23f2ccc/foto%20mobil/star.svg" style="width: 25px;height: 25px;"class="float-left mr-1">
+                          <div class="float-left"style="color: #f3712f;"><h5>Safety and Assistance Systems</h5>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                      <div class="col ml-2">
+                        <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/7fe06482555a274733942aafa513975bd23f2ccc/foto%20mobil/star.svg" style="width: 25px;height: 25px;"class="float-left mr-1">
+                      <div class="float-left"style="color: #f3712f;"><h5>Premium Interior</h5>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="row">
+                     <div class="col ml-2">
+                       <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/7fe06482555a274733942aafa513975bd23f2ccc/foto%20mobil/star.svg" style="width: 25px;height: 25px;"class="float-left mr-1">
+                         <div class="float-left"style="color: #f3712f;"><h5>Comfort and Safety</h5>
+                      </div>
+                    </div>
+                 </div>   
+                 <div class="row">
+                  <div class="col ml-2">
+                    <img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/7fe06482555a274733942aafa513975bd23f2ccc/foto%20mobil/star.svg" style="width: 25px;height: 25px;"class="float-left mr-1">
+                      <div class="float-left"style="color: #f3712f;"><h5>Luxury Model</h5>
+                   </div>
+                 </div>
+              </div>
+                <div class="row">
+                    <div class="col ml-2">
+                    <hr size="10px" style="border-color: #f3712f">
+                    <center class="my-3" >
+                      <div class="my-2">
+                        <button style="width: 30%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Open Door</button>
+                        <button style="width: 30%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Close Door</button>
+                      </div>
+                      <div class="my-1">
+                        <button href="./editmycars" style="width: 60%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Edit</button>
+                      </div>
+                      <div class="my-1">
+                        <button onclick="history.back()" style="width: 60%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Back</button>
+                      </div>
+                    </center>
+                 </div>
+               </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</main></center>
+<footer class="mastfoot mt-auto" style='text-align: center; padding: 3px; background-color: #2f2f2b; border-color: #f3712f; color: #f3712f;'>
+  <div class="inner">
+    <p>
+      Want to know more about us?<br>
+      <a href="https://si-sa-pi.github.io/Sew-A-Car/About.html" style="color: #f3712f;"><b>About</b></a>
+    </p>
+  </div> 
+</footer>
+
+<%- contentFor('title') %>
+Catalogue
+
+<%- contentFor('username') %>
+lalala
