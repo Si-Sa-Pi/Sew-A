@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/Logo/Sew-A-Car unfilled.png">
+    <!--Feather Icons-->
+    <link href="assets/css/feather.css" rel="stylesheet" type="text/css">
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+
+    <!--JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+       body{
+      background-color: #2f2f2b;
+      }
+</style>
+  </head>
+<body>
+    <body class="text-center">
+
+    <center>
+    <div style="text-align: center; width: 50%;">
+        <center><img style="width: 60%; height: 20%; text-align: center;" src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/Logo/Sew-A-Car unfilled.png" alt="Logo Sew-A-Car"></center>
+        <div class=" text-center container" style="padding: 20px; color: #f3712f; background-color: #000000; width: 60%; height: 70%; border-radius: 15px; border: 2px solid #f3712f;">
+            <form formmethod="post" action="/auth/signup" method="post">
+                <h2> Sign Up</h2>
+                <br>
+                <% if (message.length > 0) { %>
+                    <div class="alert alert-warning" role="alert">
+                      <strong>Warning!</strong> <%= message %>.
+                    </div>
+                  <% } %>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="mail" >Email  </label></div>
+                        <div class="col-sm-8"	>	 
+                            <input formmethod="post" type="email" name="email"  id="email"placeholder="Enter your email" class="form-control" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-1">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="fname" >Full Name</label></div>
+                        <div class="col-sm-8"	>	 
+                            <input formmethod="post" type="fullname" name="fullname"  id="fullname"placeholder="Enter your fullname" class="form-control" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-1">
+                    <div class="row">
+                        <div class="col-sm-4">
+                        <label class="pnumber" >Phone </label></div>
+                        <div class="col-sm-8"	>	 
+                            <input formmethod="post" type="phonenumber" name="phonenumber"  id="phonenumber"placeholder="Enter your phone number" class="form-control" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-1">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="uname" >Username  </label></div>
+                        <div class="col-sm-8"	>	 
+                             <input formmethod="post" type="username" name="username"  id="username"placeholder="Enter your username" class="form-control" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-1 mb-2">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="pass">Password </label></div>
+                        <div class="col-sm-8">
+                            <input  formmethod="post" type="password" name="password" id="password" placeholder="Enter your Password" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-1 mb-3">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="date">Date Of Birth</label></div>
+                        <div class="col-sm-8 mb-1">
+                            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                                <input class="form-control" type="date" value="2000-20-08" id="example-date-input">
+                                <i class="fas fa-calendar input-prefix"></i>
+                            </div>              
+                        </div>
+                    </div>
+                    <label class="radio-inline mr-4">
+                        <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                        Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                        Female
+                    </label>
+                    <input formmethod="post" type="address" id="inputAddress" class="form-control" placeholder="Your Address" required autofocus>
+                    <input formmethod="post" type="idnumber" id="inputIdNumber" class="form-control mt-2" placeholder="Your ID Number" required>
+                    <div class="field mt-2">
+                        <h5>Upload your ID Picture</h5>
+                        <input class="float-left" type="file" id="files" name="files[]" multiple />
+                    </div>
+                    <br><br>
+                    <div id="remember" class="checkbox float-left">
+                        <label>
+                            <input type="checkbox" value="terms&conditions" style="color: #f3712f;"> Agree on Terms & Conditions
+                        </label>
+                    </div>
+                    <button style="text-align: center; color: #f3712f; width: 80%; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;" href="https://si-sa-pi.github.io/Sew-A-Car/Login.html">Sign Up</button>
+                    <button class= "mt-1" onclick="history.back()" style="text-align: center; color: #f3712f; width: 80%; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Back</button>
+            </form>                      
+        </div>
+    </div>
+
+
+<!--Footer-->
+<footer class="mastfoot mt-auto" style='text-align: center; padding: 3px; background-color: #2f2f2b; border-color: #f3712f; color: #f3712f;'>
+    <div class="inner">
+      <p>
+        Want to know more about us?<br>
+        <a href="https://si-sa-pi.github.io/Sew-A-Car/About.html" style="color: #f3712f;"><b>About</b></a>
+      </p>
+    </div> 
+</footer>
+</div>
+</body>
+</html>
