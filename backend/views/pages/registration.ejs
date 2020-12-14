@@ -1,0 +1,93 @@
+<center><main role="main" class="inner cover mx-1 py-5 px-2" style="color: #f3712f;background-color: #000000; border-radius: 15px; border: 2px solid #f3712f;">
+        <div class="row">
+        <div class="col">
+            <h4 style="text-align: center; font-size: 30px; line-height: 35px;" >Selected Car</h4>
+            <h4 style="text-align: center; font-size: 13px; line-height: 5px;" ><br>Please check again the information of the car<br><br></h4>
+            <br>
+            <!--Halaman Kiri-->
+            <div class="row">
+                <!--Halaman Kiri 1-->
+                <div class="col" style="margin: auto;">
+                    <center><img src="https://raw.githubusercontent.com/Si-Sa-Pi/Sew-A-Car/master/foto mobil/bmw-3-series 1.svg" class="rounded" alt="..." style="width: 350px; height:350"></center>
+                </div>
+                <!--Halaman Kiri 2-->
+                <div class="col-4">
+                <h4 style="text-align: center;" >
+                    <%= result[0].car_name %><br>
+                </h4>
+                <h5 style="text-align: center;" >
+                  <%= result[0].fullname %><br><br>
+              
+                  <%= result[0].transmission %><br><br>
+              
+                  <%= result[0].seat %> Seat<br><br>
+              
+                  <%= result[0].even_odd %><br><br>
+              
+                  <%= result[0].car_location %>
+                </h5>
+                </div>
+                <div style="width: 0px; height: 310px; border-left: 1px #f3712f solid;">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4 style="text-align: center; font-size: 30px; line-height: 35px;" >Confirmation Form</h4>
+            <h4 style="text-align: center; font-size: 13px; line-height: 5px;" ><br>Please fill in all the fields below to rent a car<br><br></h4>
+            <br>
+            <!--Halaman Kanan-->
+            <div class="row">
+              <div class="row" style="margin: auto;">
+                <div class="col">
+                  <h4 for="foto1">Driving License :</h4>
+                </div>
+                <div class="col">
+                  <h4 for="foto2">Driver Holding Driving License :</h4>
+                </div>
+              </div>
+              <br><br>
+              <div class="row" style="margin: auto;">
+                <div class="col">
+                  <input type="file" class="form-control-file" id="foto1">
+                </div>
+                <div class="col">
+                  <input type="file" class="form-control-file" id="foto2">
+                </div>
+              </div>
+            </div>
+            <br><br>
+            <div style="text-align: center;">
+              <form style="line-height: 18px;">
+                  <h5>Start Rent : </h5>
+                  <input type="date"/><br>
+              </form>
+        
+              <h5 style="text-align: center; word-wrap: break-word; font-size: 17px;" >
+                  until
+              </h5>
+              <form>
+                  <h5>End Rent : </h5>
+                  <input type="date"/><br>
+              </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <center class="my-3">
+      <div class="my-2">
+        <a class="btn" style="width: 25%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;"href="./payment">Sew-A-Car</a>
+      </div>
+      <div class="my-1">
+        <button onclick="history.back()" style="width: 25%; text-align: center; color: #f3712f; height: 40px; background: #2f2f2b; border: 1px solid #f3712f; font-size: 17px;  line-height: 20px; border-radius: 15px;">Back</button>
+      </div>
+    </center>
+  </main></center>
+  
+ <footer class="mastfoot mt-auto" style='text-align: center; padding: 3px; background-color: #2f2f2b; border-color: #f3712f; color: #f3712f;'>
+  <div class="inner">
+    <p>
+      Want to know more about us?<br>
+      <a href="https://si-sa-pi.github.io/Sew-A-Car/About.html" style="color: #f3712f;"><b>About</b></a>
+    </p>
+  </div> 
+</footer>
